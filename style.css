@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--pink:#ff9edb;--pink-bright:#ff5fca;--lilac:#c9a2ff;--cream:#fff2fb;--glass:rgba(45,14,66,.78)}
+*{box-sizing:border-box}html{min-height:100%}
+body{margin:0;min-height:100vh;overflow-x:hidden;color:var(--cream);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 15% 18%,rgba(171,70,180,.38),transparent 35%),radial-gradient(ellipse at 85% 78%,rgba(255,86,178,.2),transparent 32%),linear-gradient(145deg,#10091f,#29103f 48%,#100b28);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 16px 18px}
+.sky-glow{position:fixed;inset:0;pointer-events:none;opacity:.4;background-image:radial-gradient(#fff 1px,transparent 1.5px),radial-gradient(#f7a9ff 1px,transparent 1.5px);background-size:65px 65px,103px 103px;background-position:0 0,30px 45px;animation:twinkle 4s ease-in-out infinite alternate}
+.card{position:relative;z-index:1;width:min(100%,850px);text-align:center;padding:clamp(22px,5vw,46px);border:1px solid rgba(255,174,232,.42);border-radius:30px;background:var(--glass);backdrop-filter:blur(12px);box-shadow:0 0 50px rgba(227,78,209,.15),inset 0 0 30px rgba(255,255,255,.025)}
+.eyebrow{color:#f5b7ee;letter-spacing:.19em;font-size:.7rem;font-weight:700}
+.bouquet{height:155px;position:relative;margin:8px auto 0;max-width:300px}
+.flower{position:absolute;font-size:clamp(2.6rem,8vw,4.3rem);filter:drop-shadow(0 0 13px rgba(255,120,220,.4));animation:sway 3s ease-in-out infinite}
+.f1{left:17%;top:45px;transform:rotate(-16deg)}.f2{left:37%;top:5px;animation-delay:-.8s}.f3{right:17%;top:43px;transform:rotate(15deg);animation-delay:-1.4s}.f4{left:48%;top:73px;font-size:2.6rem;animation-delay:-.5s}.f5{left:4%;top:82px;font-size:2.7rem;animation-delay:-1.8s}
+.leaf{position:absolute;font-size:2.7rem;opacity:.8}.l1{left:26%;bottom:0;transform:rotate(-30deg)}.l2{right:22%;bottom:3px;transform:rotate(30deg)}
+.date{margin:0 0 8px;color:var(--lilac);font-size:.95rem;letter-spacing:.06em}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,7vw,3.8rem);line-height:1.1;margin:0 auto 18px;text-shadow:0 0 22px rgba(255,94,215,.5)}.heart{color:var(--pink);display:inline-block;margin-left:8px;animation:heartbeat 1.3s infinite}
+.intro{max-width:600px;margin:0 auto 27px;color:#f4dff6;font-size:clamp(.98rem,2.8vw,1.12rem);line-height:1.75}
+.gift-button,.secondary-button{border:0;cursor:pointer;color:#32123e;font:700 1rem 'DM Sans',sans-serif;background:linear-gradient(100deg,#ffc0e9,#e3b7ff);border-radius:999px;padding:15px 25px;box-shadow:0 0 26px rgba(255,109,215,.28);transition:transform .2s ease,box-shadow .2s ease}
+.gift-button:hover,.secondary-button:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 0 35px rgba(255,109,215,.45)}.gift-button span{margin:0 7px}
+.message{margin:26px auto 0;animation:appear .8s ease both}.message[hidden]{display:none}.divider{color:var(--pink);letter-spacing:.4em;margin-bottom:15px}
+h2{font-family:'Playfair Display',Georgia,serif;color:#ffc1e9;font-size:clamp(1.45rem,4vw,2rem);margin:0 0 20px}
+.sister-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;text-align:left}
+.sister{padding:18px 16px;border:1px solid rgba(255,158,219,.42);border-radius:19px;background:linear-gradient(145deg,rgba(255,155,220,.10),rgba(172,120,255,.09));box-shadow:inset 0 0 20px rgba(255,255,255,.025)}
+.mini-flower{font-size:1.5rem}.sister h3{font-family:'Playfair Display',Georgia,serif;color:#ffc1e9;font-size:1.2rem;margin:8px 0}.sister p{font-size:.9rem;line-height:1.65;color:#f7e8fa;margin:0}
+.family-message{line-height:1.8;color:#f9e6f8;margin:25px auto 14px;max-width:690px}.signature{color:#ffc0e9;font-weight:700;margin:18px 0}
+.secondary-button{font-size:.9rem;padding:12px 20px;margin-top:4px}.small-note{color:#c7a4d7;font-size:.78rem;margin:25px 0 0}footer{position:relative;z-index:1;color:#c7a4d7;font-size:.78rem;margin-top:16px;text-align:center}
+.petal{position:fixed;top:-35px;z-index:3;pointer-events:none;animation:fall linear forwards;filter:drop-shadow(0 0 5px rgba(255,130,218,.35))}
+@keyframes fall{to{transform:translate3d(var(--drift),110vh,0) rotate(680deg);opacity:.12}}@keyframes sway{0%,100%{translate:0 0;rotate:-5deg}50%{translate:0 -8px;rotate:5deg}}@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.22)}30%{transform:scale(1)}45%{transform:scale(1.15)}}@keyframes twinkle{from{opacity:.22}to{opacity:.55}}@keyframes appear{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){body{padding:16px 10px}.card{border-radius:23px;padding:23px 15px}.bouquet{height:140px}.sister-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sister{padding:14px 12px}.sister p{font-size:.86rem}.message p{font-size:.94rem}}
+@media(max-width:390px){.sister-grid{grid-template-columns:1fr}.sister{text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}

@@ -1,0 +1,21 @@
+REGALO PARA MIS SEIS HERMANAS 🌷
+
+Incluye dedicatorias para Gladys, Miriam, Jhanneth, Veronica, Gaby y Milenka.
+
+Archivos:
+- index.html: contenido y dedicatorias.
+- style.css: diseño adaptable, colores y animaciones.
+- script.js: botones y lluvia de pétalos.
+
+PARA PROBAR:
+1. Descomprime el ZIP.
+2. Abre index.html en Chrome.
+3. Pulsa “Abran su regalito”.
+
+PARA COMPARTIR POR WHATSAPP:
+1. Crea un repositorio público en GitHub.
+2. Sube los tres archivos a la raíz del repositorio.
+3. En Settings > Pages, elige Deploy from a branch, selecciona main y /(root), y guarda.
+4. Cuando GitHub Pages publique la página, copia el enlace y envíaselo a tus hermanas.
+
+La fuente decorativa carga desde Google Fonts cuando hay internet; la página funciona también sin ella.
